@@ -1,6 +1,7 @@
-import {makeExecutableSchema} from "graphql-tools";
-import {resolvers} from "./resolvers";
-
+/*import {makeExecutableSchema} from "graphql-tools";*/
+/*import {resolvers} from "./resolvers";*/
+const {makeExecutableSchema} = require('graphql-tools');
+const {resolvers} = require('./resolvers');
 // the client be able to use this types
 // type mutation allow insert external values...
 const typeDefs = `
