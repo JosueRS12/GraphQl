@@ -4,8 +4,7 @@ import {graphqlHTTP} from "express-graphql";
 import schema from "./schema";
 
 const app = express();
-
-
+const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) =>{
   res.json({
@@ -21,4 +20,4 @@ app.use('/graphql', graphqlHTTP({
 
 
 
-app.listen(3000, ()=> console.log('Server on port 3000'));
+app.listen(PORT, ()=> console.log('Server on port 3000'));

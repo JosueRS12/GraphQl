@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist --source-maps",
+    "heroku-postbuild": "npm run build", 
     "start": "nodemon src/index.js --exec babel-node",
     "serve": "node dist/index.js",
     "clean": "rim dist"
