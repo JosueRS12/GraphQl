@@ -5,9 +5,15 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist --source-maps",
+<<<<<<< HEAD
     "heroku-postbuild": "npm run build", 
     "start": "nodemon src/index.js --exec babel-node",
     "serve": "node dist/index.js",
+=======
+    "server": "nodemon src/index.js --exec babel-node",
+    "heroku-postbuild": "npm install",
+    "start": "babel-node src/index.js",
+>>>>>>> 31593ef427fd31c878c77eba72a5c9373799be99
     "clean": "rim dist"
   },
   "author": "",
