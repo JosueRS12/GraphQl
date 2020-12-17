@@ -1,6 +1,5 @@
 // functions for to do queries.
-//import {tasks} from "./sample";
-const {tasks} = require ('./sample');
+import {tasks} from "./sample";
 export const resolvers = {
   Query : { //the type was defined in schema
     hello: () => { //this functions does anything when is called
